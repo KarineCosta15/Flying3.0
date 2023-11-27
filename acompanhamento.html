@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Flying 3.0 - Acompanhamento</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.gstatic.com" rel="preconnect">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/quill/quill.snow.css" rel="stylesheet">
+  <link href="assets/vendor/quill/quill.bubble.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/simple-datatables/style.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="header fixed-top d-flex align-items-center">
+
+    <div class="d-flex align-items-center justify-content-between">
+      <a href="index.html" class="logo d-flex align-items-center">
+        <img src="assets/img/logo.png" alt="">
+        <span class="d-none d-lg-block">Flying 3.0</span>
+      </a>
+      <i class="bi bi-list toggle-sidebar-btn"></i>
+    </div><!-- End Logo -->
+
+    <!-- <div class="search-bar">
+      <form class="search-form d-flex align-items-center" method="POST" action="#">
+        <input type="text" name="query" placeholder="Search" title="Enter search keyword">
+        <button type="submit" title="Search"><i class="bi bi-search"></i></button>
+      </form>
+    </div> -->
+    <!-- End Search Bar -->
+
+    <nav class="header-nav ms-auto">
+      <ul class="d-flex align-items-center">
+    
+        <li class="nav-item d-block d-lg-none">
+          <a class="nav-link nav-icon search-bar-toggle " href="#">
+            <i class="bi bi-search"></i>
+          </a>
+          <!-- End Search Icon-->
+          <!-- </li>
+    
+            <li class="nav-item dropdown">
+    
+              <a class="nav-link nav-icon" href="#" data-bs-toggle="dropdown">
+                <i class="bi bi-bell"></i>
+                <span class="badge bg-primary badge-number">4</span>
+              </a> -->
+          <!-- End Notification Icon -->
+    
+          <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow notifications">
+            <li class="dropdown-header">
+              Voce tem 4 novas notificações
+              <a href="#"><span class="badge rounded-pill bg-primary p-2 ms-2">Veja Todas</span></a>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+    
+            <li class="notification-item">
+              <i class="bi bi-exclamation-circle text-warning"></i>
+              <div>
+                <h4>Lorem Ipsum</h4>
+                <p>Quae dolorem earum veritatis oditseno</p>
+                <p>30 min. ago</p>
+              </div>
+            </li>
+    
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+    
+            <li class="notification-item">
+              <i class="bi bi-x-circle text-danger"></i>
+              <div>
+                <h4>Atque rerum nesciunt</h4>
+                <p>Quae dolorem earum veritatis oditseno</p>
+                <p>1 hr. ago</p>
+              </div>
+            </li>
+    
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+    
+            <li class="notification-item">
+              <i class="bi bi-check-circle text-success"></i>
+              <div>
+                <h4>Sit rerum fuga</h4>
+                <p>Quae dolorem earum veritatis oditseno</p>
+                <p>2 hrs. ago</p>
+              </div>
+            </li>
+    
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+    
+            <li class="notification-item">
+              <i class="bi bi-info-circle text-primary"></i>
+              <div>
+                <h4>Dicta reprehenderit</h4>
+                <p>Quae dolorem earum veritatis oditseno</p>
+                <p>4 hrs. ago</p>
+              </div>
+            </li>
+    
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+            <li class="dropdown-footer">
+              <a href="#">Mostre todas as notificações</a>
+            </li>
+    
+          </ul><!-- End Notification Dropdown Items -->
+    
+        </li>
+        <!-- End Notification Nav -->
+    
+        <!-- <li class="nav-item dropdown">
+    
+              <a class="nav-link nav-icon" href="#" data-bs-toggle="dropdown">
+                <i class="bi bi-chat-left-text"></i>
+                <span class="badge bg-success badge-number">3</span> -->
+        </a><!-- End Messages Icon -->
+    
+        <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow messages">
+          <li class="dropdown-header">
+            Voce tem 3 Novas Mensagem !
+            <a href="#"><span class="badge rounded-pill bg-primary p-2 ms-2">Veja Todas</span></a>
+          </li>
+          <li>
+            <hr class="dropdown-divider">
+          </li>
+    
+          <li class="message-item">
+            <a href="#">
+              <!-- <img src="assets/img/messages-1.jpg" alt="" class="rounded-circle"> -->
+              <div>
+                <h4>Maria Hudson</h4>
+                <p>Velit asperiores et ducimus soluta repudiandae labore officia est ut...</p>
+                <p>4 hrs. ago</p>
+              </div>
+            </a>
+          </li>
+          <li>
+            <hr class="dropdown-divider">
+          </li>
+    
+          <li class="message-item">
+            <a href="#">
+              <!-- <img src="assets/img/messages-2.jpg" alt="" class="rounded-circle"> -->
+              <div>
+                <h4>Anna Nelson</h4>
+                <p>Velit asperiores et ducimus soluta repudiandae labore officia est ut...</p>
+                <p>6 hrs. ago</p>
+              </div>
+            </a>
+          </li>
+          <li>
+            <hr class="dropdown-divider">
+          </li>
+    
+          <li class="message-item">
+            <a href="#">
+              <!-- <img src="assets/img/messages-3.jpg" alt="" class="rounded-circle"> -->
+              <div>
+                <h4>David Muldon</h4>
+                <p>Velit asperiores et ducimus soluta repudiandae labore officia est ut...</p>
+                <p>8 hrs. ago</p>
+              </div>
+            </a>
+          </li>
+          <li>
+            <hr class="dropdown-divider">
+          </li>
+    
+          <li class="dropdown-footer">
+            <a href="#">Show all messages</a>
+          </li>
+    
+        </ul><!-- End Messages Dropdown Items -->
+        </li><!-- End Messages Nav -->
+          <!-- <li class="nav-item toogle-sun-moon">
+            <input type="checkbox" id="toggle_checkbox" />
+            <label class="label-darkmode-add" for="toggle_checkbox">
+              <div id="star">
+                <div class="star" id="star-1">★</div>
+                <div class="star" id="star-2">★</div>
+              </div>
+              <div id="moon"></div>
+            </label>
+          </li> -->
+        <li class="nav-item dropdown pe-3">
+        
+          <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile">
+            <li class="dropdown-header">
+              <h6>Patrick da Costa Cruz</h6>
+              <span>Consultor</span>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+        
+            <li>
+              <a class="dropdown-item d-flex align-items-center" href="users-profile.html">
+                <i class="bi bi-person"></i>
+                <span>Meu perfil</span>
+              </a>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+        
+            <li>
+              <a class="dropdown-item d-flex align-items-center" href="users-profile.html">
+                <i class="bi bi-gear"></i>
+                <span>Configuração de Conta</span>
+              </a>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+        
+            <li>
+              <a class="dropdown-item d-flex align-items-center" href="pages-faq.html">
+                <i class="bi bi-question-circle"></i>
+                <span>Precisa de ajuda?</span>
+              </a>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+        
+            <li>
+              <a class="dropdown-item d-flex align-items-center" href="#">
+                <i class="bi bi-box-arrow-right"></i>
+                <span>Encerrar</span>
+              </a>
+            </li>
+        
+          </ul><!-- End Profile Dropdown Items -->
+        </li><!-- End Profile Nav -->
+        
+        </ul>
+        </nav><!-- End Icons Navigation -->
+        
+        </header><!-- End Header -->
+        
+        <!-- ======= Sidebar ======= -->
+        <aside id="sidebar" class="sidebar">
+        
+          <ul class="sidebar-nav" id="sidebar-nav">
+        
+            <li class="nav-item">
+              <a class="nav-link " href="index.html">
+                <i class="bi bi-grid"></i>
+                <span>Pagina Inicial</span>
+              </a>
+            </li><!-- End Dashboard Nav -->
+        
+            <li class="nav-item">
+              <a class="nav-link collapsed" data-bs-target="#components-nav" data-bs-toggle="collapse" href="#">
+                <i class="bi bi-menu-button-wide"></i><span>Consultoria</span><i class="bi bi-chevron-down ms-auto"></i>
+              </a>
+              <ul id="components-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+                <li>
+                  <a href="alinhamento.html">
+                    <i class="bi bi-circle"></i><span>Alinhamento Inicial</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="geral.html">
+                    <i class="bi bi-circle"></i><span>Etapa Geral</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="migração.html">
+                    <i class="bi bi-circle"></i><span>Migração</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="acompanhamento.html">
+                    <i class="bi bi-circle"></i><span>Acompanhamento</span>
+                  </a>
+                </li>
+              </ul>
+            </li><!-- End Components Nav -->
+        
+            
+        
+            <li class="nav-heading">Links uteis </li>
+        
+        
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="pages-faq.html">
+          <i class="bx bxs-book-bookmark"></i>
+          <span>Duvidas Frequentes</span>
+        </a>
+      </li>
+      
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="https://app.pipefy.com/" target="_blank">
+          <i class="bi bi-gem"></i>
+          <span>Pipefy </span>
+        </a>
+      </li>
+      
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="https://app.acessorias.com/sysmain.php?m=145" target="_blank">
+          <i class="bi bi-envelope"></i>
+          <span>Flying Acessórias</span>
+        </a>
+      </li>
+      
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="WhatsApp.html">
+          <i class="bx bxl-whatsapp"></i>
+          <span>Chamar no WhatsApp</span>
+        </a>
+      </li>
+      
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="anotar.html">
+          <i class="bi bi-briefcase-fill"></i>
+          <span>Anote aqui</span>
+        </a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="https://app.acessorias.com/sysajuda.php?p=284&Pbusca=comece" target="_blank">
+          <i class="bi bi-briefcase-fill"></i>
+          <span>Manual acessórias</span>
+        </a>
+      </li>
+        
+          </ul><!-- End Blank Page Nav -->
+
+    </ul>
+
+  </aside><!-- End Sidebar-->
+
+  <main id="main" class="main">
+
+    <div class="pagetitle">
+      <h1>Acompanhamento</h1>
+      <nav>
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+          <li class="breadcrumb-item active">Acompanhamento</li>
+        </ol>
+      </nav>
+    </div><!-- End Page Title -->
+
+    <section class="section">
+      <div class="row">
+        <div class="col-lg-14">
+
+          <div class="card">
+            <div class="container-fluid mt-3" id="acomp">
+            <div class="row">
+                <article>
+                  <!-- <div class="form-floating mb-3">
+                    <input class="form-control" placeholder="Leave a comment here" id="officer" oninput="teste()" />
+                    <label for="floatingTextarea">Numero do Officer</label>
+                  </div> -->
+                  <div class="form-floating mb-3">
+                    <input class="form-control" placeholder="Leave a comment here" type="text" width="10" id="contato"
+                      oninput="acompTexto()" />
+                    <label for="contato">Contato com:</label>
+                  </div>
+                  <div class="form-floating mb-3">
+                    <input class="form-control" placeholder="Leave a comment here" type="number" width="10" id="ticketAcomp"
+                      oninput="acompTexto()" />
+                    <label for="ticketAcomp">Ticket:</label>
+                  </div>
+                  <div class="form-floating mb-3">
+                    <input class="form-control" placeholder="Leave a comment here" type="text" width="10" id="AregUso"
+                      oninput="acompTexto()" />
+                    <label for="AregUso">Uso: (Justificar se não tiver)</label>
+                  </div>
+                  <div class="form-floating mb-3">
+                    <input class="form-control" placeholder="Leave a comment here" type="number" width="10" id="Aacesso"
+                      oninput="acompTexto()" />
+                    <label for="Aacesso">Acesso:</label>
+                  </div>
+                  <div class="form-floating mb-3">
+                    <input class="form-control" placeholder="Leave a comment here" type="number" width="10" id="Aentregas"
+                      oninput="acompTexto()" />
+                    <label for="Aentregas">Entregas:</label>
+                  </div>
+                  <div class="form-floating mb-3">
+                    <input class="form-control" placeholder="Leave a comment here" type="number" width="10" id="Arobo"
+                      oninput="acompTexto()" />
+                    <label for="Arobo">Robô:</label>
+                  </div>
+                  <div class="form-floating mb-3">
+                    <textarea class="form-control" placeholder="Leave a comment here" id="tratativa" style="height: 250px"
+                      placeholder="1" oninput="acompTexto()"></textarea>
+                    <label for="tratativa">Informações Adicionais:</label>
+                  </div>
+
+                  <!-- <div class="row mb-3">
+                    <h5>Backup?</h5>
+                  </div> -->
+
+                  <div class="mb-4">
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" name="btnBackup2" type="radio" id="simBackup2" value="yes"
+                        oninput="pergBackup2()" />
+                      <label class="form-check-label" for="simBackup2">Sim</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" name="btnBackup2" type="radio" id="naoBackup2" value="no"
+                        oninput="pergBackup2()" checked />
+                      <label class="form-check-label" for="naoBackup2">Não</label>
+                    </div>
+                  </div>
+
+                  <div id="telaBackup2" class="mb-3" style="display: none">
+                    <div class="card col-sm-12 col-md-11">
+                      <div class="card-header">
+                        <h5>Informações para o Backup</h5>
+                      </div>
+                      <div class="card-body">
+                        <div class="mb-3 row">
+                          <label for="customRange1" class="form-label">Cliente comprometido?&nbsp;<span
+                              id="comprometido2-value">Nota: 5</span></label>
+                          <input type="range" class="form-range" id="comprometido2" min="0" max="10" step="1"
+                            oninput="iTec.innerHTML=Number(tecnologico.value)" onchange="acompTexto()" />
+                        </div>
+                        <div class="mb-3 row">
+                          <label for="customRange1" class="form-label">Cliente tecnológico?&nbsp;<span
+                              id="tecnologico2-value">Nota: 5</span></label>
+                          <input type="range" class="form-range" id="tecnologico2" min="0" max="10" step="1"
+                            oninput="iTec.innerHTML=Number(tecnologico.value)" onchange="acompTexto()" />
+                        </div>
+                        <div class="form-floating mb-3">
+                          <textarea class="form-control" placeholder="Leave a comment here" id="etapaBackup2"
+                            style="height: 250px" placeholder="1" oninput="acompTexto()"></textarea>
+                          <label for="etapaBackup2">Informações Adicionais:</label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="mb-3">
+                    <button type="button" class="btn btn-outline-primary" onclick="copResp4()" data-bs-toggle="modal"
+                      data-bs-target="#exampleModal4">
+                      Copiar Texto
+                    </button>
+                    <button type="button" class="btn btn-outline-danger" onclick="deleteRespAcomp()">
+                      Apagar Tudo
+                    </button>
+                  </div>
+
+                  <!-- Modal -->
+                  <div class="modal fade" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-xl">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h1 class="modal-title fs-5" id="exampleModalLabel">
+                            Texto Copiado
+                          </h1>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          <div class="alert alert-warning" role="alert">
+                            Não esqueça de criar o Ticket de Acompanhamento no movidesk !
+                          </div>
+                          <p id="Aresp1"></p>
+                          <p id="Aresp2"></p>
+                          <p id="Aresp3"></p>
+                          <p id="Aresp4"></p>
+                          <p id="Aresp5"></p>
+                          <p id="Aresp6"></p>
+                          <p id="Aresp7"></p>
+                          <p id="Aresp8"></p>
+                          <p id="Aresp9"></p>
+                          <p id="Aresp10"></p>
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-outline-danger" data-bs-dismiss="modal">
+                            Fechar
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+              </div>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer" class="footer">
+    <div class="copyright">
+      &copy; Copyright <strong><span>Karine Costa</span></strong>. Todos os direitos Reservados
+    </div>
+    <div class="credits">
+      Feito por <a href="https://github.com/KarineCosta15" target="_blank">Karine Costa</a>
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/apexcharts/apexcharts.min.js"></script>
+  <script src="script.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/chart.js/chart.umd.js"></script>
+  <script src="assets/vendor/echarts/echarts.min.js"></script>
+  <script src="assets/vendor/quill/quill.min.js"></script>
+  <script src="assets/vendor/simple-datatables/simple-datatables.js"></script>
+  <script src="assets/vendor/tinymce/tinymce.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

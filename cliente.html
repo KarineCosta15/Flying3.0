@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>Fly 2.0 - Base de Clientes</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+
+    <!-- Favicons -->
+    <link href="assets/img/favicon.png" rel="icon">
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.gstatic.com" rel="preconnect">
+    <link
+        href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+        rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="assets/vendor/quill/quill.snow.css" rel="stylesheet">
+    <link href="assets/vendor/quill/quill.bubble.css" rel="stylesheet">
+    <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+    <link href="assets/vendor/simple-datatables/style.css" rel="stylesheet">
+
+    <!-- Template Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- ======= Header ======= -->
+    <header id="header" class="header fixed-top d-flex align-items-center">
+
+        <div class="d-flex align-items-center justify-content-between">
+            <a href="index.html" class="logo d-flex align-items-center">
+                <img src="assets/img/logo.png" alt="">
+                <span class="d-none d-lg-block">Fly 2.0</span>
+            </a>
+            <i class="bi bi-list toggle-sidebar-btn"></i>
+        </div><!-- End Logo -->
+
+        <!-- <div class="search-bar">
+      <form class="search-form d-flex align-items-center" method="POST" action="#">
+        <input type="text" name="query" placeholder="Buscar" title="Enter search keyword">
+        <button type="submit" title="Search"><i class="bi bi-search"></i></button>
+      </form>
+    </div> -->
+        <!-- End Search Bar -->
+
+        <nav class="header-nav ms-auto">
+            <ul class="d-flex align-items-center">
+
+                <li class="nav-item d-block d-lg-none">
+                    <a class="nav-link nav-icon search-bar-toggle " href="#">
+                        <i class="bi bi-search"></i>
+                    </a>
+                    <!-- End Search Icon-->
+                    <!-- </li>
+      
+              <li class="nav-item dropdown">
+      
+                <a class="nav-link nav-icon" href="#" data-bs-toggle="dropdown">
+                  <i class="bi bi-bell"></i>
+                  <span class="badge bg-primary badge-number">4</span>
+                </a> -->
+                    <!-- End Notification Icon -->
+
+                    <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow notifications">
+                        <li class="dropdown-header">
+                            Voce tem 4 novas notificações
+                            <a href="#"><span class="badge rounded-pill bg-primary p-2 ms-2">Veja Todas</span></a>
+                        </li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+
+                        <li class="notification-item">
+                            <i class="bi bi-exclamation-circle text-warning"></i>
+                            <div>
+                                <h4>Lorem Ipsum</h4>
+                                <p>Quae dolorem earum veritatis oditseno</p>
+                                <p>30 min. ago</p>
+                            </div>
+                        </li>
+
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+
+                        <li class="notification-item">
+                            <i class="bi bi-x-circle text-danger"></i>
+                            <div>
+                                <h4>Atque rerum nesciunt</h4>
+                                <p>Quae dolorem earum veritatis oditseno</p>
+                                <p>1 hr. ago</p>
+                            </div>
+                        </li>
+
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+
+                        <li class="notification-item">
+                            <i class="bi bi-check-circle text-success"></i>
+                            <div>
+                                <h4>Sit rerum fuga</h4>
+                                <p>Quae dolorem earum veritatis oditseno</p>
+                                <p>2 hrs. ago</p>
+                            </div>
+                        </li>
+
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+
+                        <li class="notification-item">
+                            <i class="bi bi-info-circle text-primary"></i>
+                            <div>
+                                <h4>Dicta reprehenderit</h4>
+                                <p>Quae dolorem earum veritatis oditseno</p>
+                                <p>4 hrs. ago</p>
+                            </div>
+                        </li>
+
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li class="dropdown-footer">
+                            <a href="#">Mostre todas as notificações</a>
+                        </li>
+
+                    </ul><!-- End Notification Dropdown Items -->
+
+                </li>
+                <!-- End Notification Nav -->
+
+                <!-- <li class="nav-item dropdown">
+      
+                <a class="nav-link nav-icon" href="#" data-bs-toggle="dropdown">
+                  <i class="bi bi-chat-left-text"></i>
+                  <span class="badge bg-success badge-number">3</span> -->
+                </a><!-- End Messages Icon -->
+
+                <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow messages">
+                    <li class="dropdown-header">
+                        Voce tem 3 Novas Mensagem !
+                        <a href="#"><span class="badge rounded-pill bg-primary p-2 ms-2">Veja Todas</span></a>
+                    </li>
+                    <li>
+                        <hr class="dropdown-divider">
+                    </li>
+
+                    <li class="message-item">
+                        <a href="#">
+                            <!-- <img src="assets/img/messages-1.jpg" alt="" class="rounded-circle"> -->
+                            <div>
+                                <h4>Maria Hudson</h4>
+                                <p>Velit asperiores et ducimus soluta repudiandae labore officia est ut...</p>
+                                <p>4 hrs. ago</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <hr class="dropdown-divider">
+                    </li>
+
+                    <li class="message-item">
+                        <a href="#">
+                            <!-- <img src="assets/img/messages-2.jpg" alt="" class="rounded-circle"> -->
+                            <div>
+                                <h4>Anna Nelson</h4>
+                                <p>Velit asperiores et ducimus soluta repudiandae labore officia est ut...</p>
+                                <p>6 hrs. ago</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <hr class="dropdown-divider">
+                    </li>
+
+                    <li class="message-item">
+                        <a href="#">
+                            <!-- <img src="assets/img/messages-3.jpg" alt="" class="rounded-circle"> -->
+                            <div>
+                                <h4>David Muldon</h4>
+                                <p>Velit asperiores et ducimus soluta repudiandae labore officia est ut...</p>
+                                <p>8 hrs. ago</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <hr class="dropdown-divider">
+                    </li>
+
+                    <li class="dropdown-footer">
+                        <a href="#">Show all messages</a>
+                    </li>
+
+                </ul><!-- End Messages Dropdown Items -->
+
+                </li><!-- End Messages Nav -->
+
+                <li class="nav-item dropdown pe-3">
+
+                    <!-- <a class="nav-link nav-profile d-flex align-items-center pe-0" href="#" data-bs-toggle="dropdown">
+            <img src="assets/img/profile-img.jpg" alt="Profile" class="rounded-circle">
+            <span class="d-none d-md-block dropdown-toggle ps-2">Patrick C. Cruz</span>
+          </a> -->
+
+                    <!-- End Profile Iamge Icon -->
+
+                    <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile">
+                        <li class="dropdown-header">
+                            <h6>Patrick da Costa Cruz</h6>
+                            <span>Consultor</span>
+                        </li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center" href="users-profile.html">
+                                <i class="bi bi-person"></i>
+                                <span>Meu perfil</span>
+                            </a>
+                        </li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center" href="users-profile.html">
+                                <i class="bi bi-gear"></i>
+                                <span>Configuração de Conta</span>
+                            </a>
+                        </li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center" href="pages-faq.html">
+                                <i class="bi bi-question-circle"></i>
+                                <span>Precisa de ajuda?</span>
+                            </a>
+                        </li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center" href="#">
+                                <i class="bi bi-box-arrow-right"></i>
+                                <span>Encerrar</span>
+                            </a>
+                        </li>
+
+                    </ul><!-- End Profile Dropdown Items -->
+                </li><!-- End Profile Nav -->
+
+            </ul>
+        </nav><!-- End Icons Navigation -->
+
+    </header><!-- End Header -->
+
+    <!-- ======= Sidebar ======= -->
+    <aside id="sidebar" class="sidebar">
+
+        <ul class="sidebar-nav" id="sidebar-nav">
+
+            <li class="nav-item">
+                <a class="nav-link " href="index.html">
+                    <i class="bi bi-grid"></i>
+                    <span>Pagina Inicial</span>
+                </a>
+            </li><!-- End Dashboard Nav -->
+
+            <li class="nav-item">
+                <a class="nav-link collapsed" data-bs-target="#components-nav" data-bs-toggle="collapse" href="#">
+                    <i class="bi bi-menu-button-wide"></i><span>Consultoria</span><i
+                        class="bi bi-chevron-down ms-auto"></i>
+                </a>
+                <ul id="components-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+                    <li>
+                        <a href="alinhamento.html">
+                            <i class="bi bi-circle"></i><span>Alinhamento Inicial</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="geral.html">
+                            <i class="bi bi-circle"></i><span>Etapa Geral</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="migração.html">
+                            <i class="bi bi-circle"></i><span>Migração</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="acompanhamento.html">
+                            <i class="bi bi-circle"></i><span>Acompanhamento</span>
+                        </a>
+                    </li>
+                </ul>
+            </li><!-- End Components Nav -->
+
+            <li class="nav-heading">Links uteis </li>
+
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="pages-faq.html">
+                    <i class="bx bxs-book-bookmark"></i>
+                    <span>Duvidas Frequentes</span>
+                </a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="pages-contact.html">
+                    <i class="bx bx bxl-telegram"></i>
+                    <span>Contatos</span>
+                </a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="https://app.pipefy.com/" target="_blank">
+                    <i class="bi bi-gem"></i>
+                    <span>Pipe Fly </span>
+                </a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="https://app.acessorias.com/sysmain.php?m=145" target="_blank">
+                    <i class="bi bi-envelope"></i>
+                    <span>Fly Acessórias</span>
+                </a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="WhatsApp.html">
+                    <i class="bx bxl-whatsapp"></i>
+                    <span>Chamar no WhatsApp</span>
+                </a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="anotar.html">
+                    <i class="bi bi-briefcase-fill"></i>
+                    <span>Anote aqui</span>
+                </a>
+            </li>
+
+            <!-- End Blank Page Nav -->
+
+        </ul>
+
+    </aside>
+
+    <!-- End Sidebar-->
+
+    <main id="main" class="main">
+
+        <div class="pagetitle">
+            <h1>Base de Cliente</h1>
+            <nav>
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item active">Base de Cliente</li>
+                </ol>
+            </nav>
+        </div>
+
+        <!-- End Page Title -->
+
+        <div class="card basic">
+            <div class="form-check form-check-inline mt-3">
+                <form id="configuracaoForm">
+                    <div class="mb-3">
+                        <label for="nomeEscritorio" class="form-label">Nome do Escritório</label>
+                        <input type="text" class="form-control" id="nomeEscritorio"
+                            placeholder="Digite o nome do escritório">
+                    </div>
+                    <div class="mb-3">
+                        <label for="etapaSelecao" class="form-label">Etapa</label>
+                        <select class="form-select" id="etapaSelecao">
+                            <option value="Configuração Inicial">Configuração Inicial</option>
+                            <option value="lista de Entregas">Lista de Entregas</option>
+                            <option value="E - Continuo Avançado">E-Continuo Avançado</option>
+                            <option value="departamento">Departamento</option>
+                            <option value="Gestão de Processo">Gestão de Processo</option>
+                            <option value="areaVip">Área VIP</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="envioGeral" class="form-label">Envio Geral</label>
+                        <input type="number" class="form-control" id="envioGeral"
+                            placeholder="Informe o envio geral em números">
+                    </div>
+                    <div class="mb-3">
+                        <label for="envioRobo" class="form-label">Envio pelo Robô</label>
+                        <input type="number" class="form-control" id="envioRobo"
+                            placeholder="Informe o envio pelo robô em números">
+                    </div>
+                    <div class="mb-3">
+                        <label for="quantidadeFaltas" class="form-label">Quantidade de Faltas</label>
+                        <select class="form-select" id="quantidadeFaltas">
+                            <option value="0">0 faltas</option>
+                            <option value="1">1 falta</option>
+                            <option value="2">2 faltas</option>
+                            <option value="3">3 faltas</option>
+                            <option value="4">4 faltas</option>
+                            <option value="5">5 faltas</option>
+                            <option value="6">6 faltas</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+                </form>
+    
+                <div id="formContainer" class="mt-4">
+                    <!-- Aqui serão adicionados os formulários gerados -->
+                    <button id="apagarCards" class="btn btn-danger">Apagar Cards</button>
+                </div>
+            </div>
+        <div>
+    </main>
+    
+
+    <!-- End #main -->
+
+    <!-- ======= Footer ======= -->
+    <footer id="footer" class="footer">
+        <div class="copyright">
+          &copy; Copyright <strong><span>Karine Costa</span></strong>. Todos os direitos Reservados
+        </div>
+        <div class="credits">
+          Feito por <a href="https://github.com/KarineCosta15" target="_blank">Karine Costa</a>
+        </div>
+      </footer><!-- End Footer -->
+
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+            class="bi bi-arrow-up-short"></i></a>
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/apexcharts/apexcharts.min.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/chart.js/chart.umd.js"></script>
+    <script src="assets/vendor/echarts/echarts.min.js"></script>
+    <script src="assets/vendor/quill/quill.min.js"></script>
+    <script src="assets/vendor/simple-datatables/simple-datatables.js"></script>
+    <script src="assets/vendor/tinymce/tinymce.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.min.js"></script>
+    
+    <script>
+        document.getElementById("configuracaoForm").addEventListener("submit", function (event) {
+            event.preventDefault();
+
+            // Recupera os valores dos campos do formulário
+            var nomeEscritorio = document.getElementById("nomeEscritorio").value;
+            var etapaSelecao = document.getElementById("etapaSelecao").value;
+            var envioGeral = document.getElementById("envioGeral").value;
+            var envioRobo = document.getElementById("envioRobo").value;
+            var quantidadeFaltas = document.getElementById("quantidadeFaltas").value;
+
+            // Cria um novo card com campos de entrada editáveis
+            var newCard = document.createElement("div");
+            newCard.className = "card mt-4";
+            newCard.style.display = "block";
+
+            // Conteúdo do card com campos de entrada editáveis
+            newCard.innerHTML = `
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <div class="card-body">
+                                <h5 class="card-title"><strong>Informação de clientes</strong></h5>
+                                <p><strong>Nome do Escritório:</strong> ${nomeEscritorio}</p>
+                                <p><strong>Etapa:</strong> ${etapaSelecao}</p>
+                                <p><strong>Envio Geral:</strong> ${envioGeral}</p>
+                                <p><strong>Envio pelo Robô:</strong> ${envioRobo}</p>
+                                <p><strong>Quantidade de Faltas:</strong> ${quantidadeFaltas} faltas</p>
+                            </div>
+                        </div>
+                    </div>
+                `;
+
+            // Adiciona o novo card à seção de formulários gerados
+            document.getElementById("formContainer").appendChild(newCard);
+
+            // Adicione a capacidade de editar as informações ao botão "Editar"
+            newCard.querySelector(".editButton").addEventListener("click", function () {
+                enableEdit(newCard);
+            });
+        });
+
+        function enableEdit(card) {
+            // Habilita a edição do card
+            var cardTitle = card.querySelector(".card-title");
+            cardTitle.textContent = "Editar Informações";
+            var editButton = card.querySelector(".editButton");
+            editButton.style.display = "none";
+
+            // Cria botão "Salvar" e "Cancelar" para finalizar ou cancelar a edição
+            var saveButton = document.createElement("button");
+            saveButton.textContent = "Salvar";
+            saveButton.className = "btn btn-primary";
+            saveButton.addEventListener("click", function () {
+                saveEdit(card);
+            });
+
+            var cancelButton = document.createElement("button");
+            cancelButton.textContent = "Cancelar";
+            cancelButton.className = "btn btn-secondary";
+            cancelButton.addEventListener("click", function () {
+                cancelEdit(card);
+            });
+
+            card.querySelector(".card-body").appendChild(saveButton);
+            card.querySelector(".card-body").appendChild(cancelButton);
+
+            // Habilita a edição dos campos
+            card.querySelector("p:nth-child(2)").style.display = "none";
+            card.querySelector("p:nth-child(3)").style.display = "none";
+            card.querySelector("p:nth-child(4)").style.display = "none";
+            card.querySelector("p:nth-child(5)").style.display = "none";
+
+            var inputEtapa = document.createElement("select");
+            inputEtapa.className = "form-select";
+            inputEtapa.value = card.querySelector("p:nth-child(3)").textContent;
+            inputEtapa.innerHTML = `
+                    <option value="configuracaoInicial">Configuração Inicial</option>
+                    <option value="listaEntregas">Lista de Entregas</option>
+                    <option value="eContinuoAvancado">E-Continuo Avançado</option>
+                    <option value="departamento">Departamento</option>
+                    <option value="gestaoProcesso">Gestão de Processo</option>
+                    <option value="app">App</option>
+                    <option value="areaVip">Área VIP</option>
+                `;
+
+            var inputEnvioGeral = document.createElement("input");
+            inputEnvioGeral.className = "form-control";
+            inputEnvioGeral.value = card.querySelector("p:nth-child(4)").textContent;
+
+            var inputEnvioRobo = document.createElement("input");
+            inputEnvioRobo.className = "form-control";
+            inputEnvioRobo.value = card.querySelector("p:nth-child(5)").textContent;
+
+            var inputQuantidadeFaltas = document.createElement("select");
+            inputQuantidadeFaltas.className = "form-select";
+            inputQuantidadeFaltas.value = card.querySelector("p:nth-child(6)").textContent;
+            inputQuantidadeFaltas.innerHTML = `
+                    <option value="0">0 faltas</option>
+                    <option value="1">1 falta</option>
+                    <option value="2">2 faltas</option>
+                    <option value="3">3 faltas</option>
+                    <option value="4">4 faltas</option>
+                    <option value="5">5 faltas</option>
+                    <option value="6">6 faltas</option>
+                `;
+
+            card.querySelector("p:nth-child(3)").insertAdjacentElement("beforebegin", inputEtapa);
+            card.querySelector("p:nth-child(4)").insertAdjacentElement("beforebegin", inputEnvioGeral);
+            card.querySelector("p:nth-child(5)").insertAdjacentElement("beforebegin", inputEnvioRobo);
+            card.querySelector("p:nth-child(6)").insertAdjacentElement("beforebegin", inputQuantidadeFaltas);
+        }
+
+        function saveEdit(card) {
+            // Salva as edições no card
+            var cardTitle = card.querySelector(".card-title");
+            cardTitle.textContent = "Informações Inseridas";
+            var editButton = card.querySelector(".editButton");
+            editButton.style.display = "block";
+
+            // Remove os botões "Salvar" e "Cancelar"
+            card.querySelector(".btn-primary").remove();
+            card.querySelector(".btn-secondary").remove();
+
+            // Desabilita a edição dos campos
+            card.querySelector("select").style.display = "none";
+            card.querySelector("input").style.display = "none";
+            card.querySelector("p:nth-child(2)").style.display = "block";
+            card.querySelector("p:nth-child(3)").style.display = "block";
+            card.querySelector("p:nth-child(4)").style.display = "block";
+            card.querySelector("p:nth-child(5)").style.display = "block";
+
+            // Atualiza os valores nos parágrafos
+            card.querySelector("p:nth-child(2)").textContent = "Nome do Escritório: " + card.querySelector("select").value;
+            card.querySelector("p:nth-child(3)").textContent = "Etapa: " + card.querySelector("input:nth-child(3)").value;
+            card.querySelector("p:nth-child(4)").textContent = "Envio Geral: " + card.querySelector("input:nth-child(4)").value;
+            card.querySelector("p:nth-child(5)").textContent = "Envio pelo Robô: " + card.querySelector("input:nth-child(5)").value;
+            card.querySelector("p:nth-child(6)").textContent = "Quantidade de Faltas: " + card.querySelector("select:nth-child(6)").value;
+        }
+
+        function cancelEdit(card) {
+            // Cancela a edição no card
+            var cardTitle = card.querySelector(".card-title");
+            cardTitle.textContent = "Informações Inseridas";
+            var editButton = card.querySelector(".editButton");
+            editButton.style.display = "block";
+
+            // Remove os botões "Salvar" e "Cancelar"
+            card.querySelector(".btn-primary").remove();
+            card.querySelector(".btn-secondary").remove();
+
+            // Desabilita a edição dos campos
+            card.querySelector("select").style.display = "none";
+            card.querySelector("input").style.display = "none";
+            card.querySelector("p:nth-child(2)").style.display = "block";
+            card.querySelector("p:nth-child(3)").style.display = "block";
+            card.querySelector("p:nth-child(4)").style.display = "block";
+            card.querySelector("p:nth-child(5)").style.display = "block";
+            card.querySelector("p:nth-child(6)").style.display = "block";
+        }
+    </script>
+    <script>
+        document.getElementById('configuracaoForm').addEventListener('submit', function (e) {
+            e.preventDefault(); // Impede o envio do formulário
+
+            // Cria um novo card com o conteúdo do formulário
+            var novoCard = document.createElement('div');
+            novoCard.className = 'card basic mt-4';
+            novoCard.innerHTML = `
+                <div class="card-body">
+                    <!-- Conteúdo do card -->
+                    <button class="btn btn-danger apagarCard">Apagar Card</button>
+                </div>
+            `;
+
+            // Adiciona o novo card ao elemento "formContainer"
+            document.getElementById('formContainer').appendChild(novoCard);
+
+            // Limpa os campos do formulário
+            document.getElementById('nomeEscritorio').value = '';
+            document.getElementById('etapaSelecao').value = 'Configuração Inicial';
+            document.getElementById('envioGeral').value = '';
+            document.getElementById('envioRobo').value = '';
+            document.getElementById('quantidadeFaltas').value = '0';
+
+            // Adiciona um evento de clique ao botão "Apagar Card" do novo card
+            novoCard.querySelector('.apagarCard').addEventListener('click', function () {
+                novoCard.remove(); // Remove o card em que o botão está
+            });
+        });
+    </script>
+</body>
+
+</html>
