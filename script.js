@@ -74,10 +74,15 @@ function teste() {
     "etapa1resp12"
   ).innerHTML = `- Ticket do App e Area Vip: ${etapa12}`;
 
-  let etapa13 = document.getElementById("obs").value;
+  let etapa13 = document.getElementById("ContaApple").value;
   document.getElementById(
     "etapa1resp13"
-  ).innerHTML = `- Informações Adicionais: ${etapa13}`;
+  ).innerHTML = `- Há interesse na conta Apple? ${etapa13}`;
+
+  let etapa14 = document.getElementById("obs").value;
+  document.getElementById(
+    "etapa1resp14"
+  ).innerHTML = `- Informações Adicionais: ${etapa14}`;
 }
 
 function copRespFalta2() {
@@ -598,6 +603,7 @@ function deleteRespInicio() {
   document.getElementById("maioriaRegimes").value = "";
   document.getElementById("valor").value = "";
   document.getElementById("TicketApp").value = "";
+  document.getElementById("ContaApple").value = "";
   document.getElementById("obs").value = "";
 }
 
