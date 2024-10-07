@@ -69,20 +69,20 @@ function teste() {
     "etapa1resp10"
   ).innerHTML = `- Valor da Acessórias mais chamou atenção: ${etapa10}`;
 
-  let etapa12 = document.getElementById("TicketApp").value;
+  let etapa11 = document.getElementById("TicketApp").value;
+  document.getElementById(
+    "etapa1resp11"
+  ).innerHTML = `- Ticket do App e Area Vip: ${etapa11}`;
+
+  let etapa12 = document.getElementById("ContaApple").value;
   document.getElementById(
     "etapa1resp12"
-  ).innerHTML = `- Ticket do App e Area Vip: ${etapa12}`;
+  ).innerHTML = `- Há interesse na conta Apple? ${etapa12}`;
 
-  let etapa13 = document.getElementById("ContaApple").value;
+  let etapa13 = document.getElementById("obs").value;
   document.getElementById(
     "etapa1resp13"
-  ).innerHTML = `- Há interesse na conta Apple? ${etapa13}`;
-
-  let etapa14 = document.getElementById("obs").value;
-  document.getElementById(
-    "etapa1resp14"
-  ).innerHTML = `- Informações Adicionais: ${etapa14}`;
+  ).innerHTML = `- Informações Adicionais: ${etapa13}`;
 }
 
 function copRespFalta2() {
@@ -142,7 +142,7 @@ function copResp() {
           document.getElementById(`etapa1resp${i}`).innerHTML = ``;
         }
       } else {
-        textToCopy = `**Etapa Configuração inicial**\n\n${etapa1}\n${etapa2}\n${etapa3}\n${etapa4}\n${etapa5}\n${etapa6}\n${etapa7}\n${etapa8}\n${etapa9}\n${etapa10}\n${etapa12}\n${etapa13}\n${etapa14}`;
+        textToCopy = `**Etapa Configuração inicial**\n\n${etapa1}\n${etapa2}\n${etapa3}\n${etapa4}\n${etapa5}\n${etapa6}\n${etapa7}\n${etapa8}\n${etapa9}\n${etapa10}\n${etapa11}\n${etapa12}\n${etapa13}\n${etapa14}`;
       }
     }
   }
