@@ -130,6 +130,7 @@ function copResp() {
   let etapa11 = document.getElementById("etapa1resp11").textContent;
   let etapa12 = document.getElementById("etapa1resp12").textContent;
   let etapa13 = document.getElementById("etapa1resp13").textContent;
+  let etapa14 = document.getElementById("etapa1resp14").textContent;
 
   var value = document.getElementsByName("faltaClient");
   let textToCopy = "";
