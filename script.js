@@ -142,7 +142,7 @@ function copResp() {
           document.getElementById(`etapa1resp${i}`).innerHTML = ``;
         }
       } else {
-        textToCopy = `**Etapa Configuração inicial**\n\n${etapa1}\n${etapa2}\n${etapa3}\n${etapa4}\n${etapa5}\n${etapa6}\n${etapa7}\n${etapa8}\n${etapa9}\n${etapa10}\n${etapa12}\n${etapa13}`;
+        textToCopy = `**Etapa Configuração inicial**\n\n${etapa1}\n${etapa2}\n${etapa3}\n${etapa4}\n${etapa5}\n${etapa6}\n${etapa7}\n${etapa8}\n${etapa9}\n${etapa10}\n${etapa12}\n${etapa13}\n${etapa14}`;
       }
     }
   }
