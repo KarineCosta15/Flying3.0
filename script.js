@@ -79,10 +79,25 @@ function teste() {
     "etapa1resp12"
   ).innerHTML = `- Há interesse na conta Apple? ${etapa12}`;
 
-  let etapa13 = document.getElementById("obs").value;
+  let etapa13 = document.getElementById("RecVenda").value;
   document.getElementById(
     "etapa1resp13"
-  ).innerHTML = `- Informações Adicionais: ${etapa13}`;
+  ).innerHTML = `- Houve alguma reclamação relacionada à venda? Se sim, foi aberto ticket? ${etapa13}`;
+
+  let etapa14 = document.getElementById("ClienteParticipativo").value;
+  document.getElementById(
+    "etapa1resp14"
+  ).innerHTML = `- Cliente foi participativo? ${etapa14}`;
+
+  let etapa15 = document.getElementById("ClienteCriticou").value;
+  document.getElementById(
+    "etapa1resp15"
+  ).innerHTML = `- Cliente criticou, comparou ou questionou sobre funcionalidades da ferramenta? ${etapa15}`;
+
+  let etapa16 = document.getElementById("obs").value;
+  document.getElementById(
+    "etapa1resp16"
+  ).innerHTML = `- Informações Adicionais: ${etapa16}`;
 }
 
 function copRespFalta2() {
@@ -131,18 +146,20 @@ function copResp() {
   let etapa12 = document.getElementById("etapa1resp12").textContent;
   let etapa13 = document.getElementById("etapa1resp13").textContent;
   let etapa14 = document.getElementById("etapa1resp14").textContent;
+  let etapa15 = document.getElementById("etapa1resp15").textContent;
+  let etapa16 = document.getElementById("etapa1resp16").textContent;
 
   var value = document.getElementsByName("faltaClient");
   let textToCopy = "";
   for (var radio of value) {
     if (radio.checked) {
       if (radio.value == "yes") {
-        textToCopy = `${etapa13}`;
+        textToCopy = `${etapa16}`;
         for (var i = 1; i <= 10; i++) {
           document.getElementById(`etapa1resp${i}`).innerHTML = ``;
         }
       } else {
-        textToCopy = `**Etapa Configuração inicial**\n\n${etapa1}\n${etapa2}\n${etapa3}\n${etapa4}\n${etapa5}\n${etapa6}\n${etapa7}\n${etapa8}\n${etapa9}\n${etapa10}\n${etapa11}\n${etapa12}\n${etapa13}\n${etapa14}`;
+        textToCopy = `**Etapa Configuração inicial**\n\n${etapa1}\n${etapa2}\n${etapa3}\n${etapa4}\n${etapa5}\n${etapa6}\n${etapa7}\n${etapa8}\n${etapa9}\n${etapa10}\n${etapa11}\n${etapa12}\n${etapa13}\n${etapa14}\n${etapa15}\n${etapa16}`;
       }
     }
   }
@@ -169,12 +186,27 @@ function infoGeral() {
   let resp2 = document.getElementById("etp-uso").value;
   document.getElementById(
     "geralResp2"
-  ).innerHTML = `- Uso do sistema: ${resp2}%`;
+  ).innerHTML = `- Uso geral do sistema: ${resp2}%`;
+
+  let resp102 = document.getElementById("etp-acesso").value;
+  document.getElementById(
+    "geralResp102"
+  ).innerHTML = `- Acesso: ${resp102}%`;
+
+  let resp103 = document.getElementById("etp-entregas").value;
+  document.getElementById(
+    "geralResp103"
+  ).innerHTML = `- Lista de entregas: ${resp103}%`;
+
+  let resp104 = document.getElementById("etp-econtínuo").value;
+  document.getElementById(
+    "geralResp104"
+  ).innerHTML = `- E-Continuo: ${resp104}%`;
 
   let resp6 = document.getElementById("parcicipantes").value;
   document.getElementById(
     "geralResp6"
-  ).innerHTML = `- Quem participou da consultoria/departamento: ${resp6}`;
+  ).innerHTML = `- Quem participou da consultoria: ${resp6}`;
 
   var value = document.getElementsByName("horário");
   for (var radio of value) {
@@ -259,7 +291,7 @@ function copResp2() {
   let resp0 = document.getElementById("geralResp0").textContent;
   let resp1 = document.getElementById("geralResp1").textContent;
   let resp2 = document.getElementById("geralResp2").textContent;
-  let resp55 = "";
+  //let resp55 = "";
 
   var checkboxValues = document.getElementsByName("duvidas");
   for (var checkbox of checkboxValues) {
@@ -268,9 +300,9 @@ function copResp2() {
     }
   }
 
-  document.getElementById(
-    "geralResp55"
-  ).innerHTML = `- Em qual etapa tiveram dúvidas/dificuldades: ${resp55}`;
+ // document.getElementById(
+ //   "geralResp55"
+ // ).innerHTML = `- Em qual etapa tiveram dúvidas/dificuldades: ${resp55}`;
 
   let resp6 = document.getElementById("geralResp6").textContent;
   let resp7 = document.getElementById("geralResp7").textContent;
@@ -288,9 +320,9 @@ function copResp2() {
   for (var radio of value) {
     if (radio.checked) {
       if (radio.value == "yes") {
-        textToCopy = `\n**Etapa Consultoria**\n\n${resp0}\n${resp2}\n${resp6}\n${resp55}\n${resp7}\n${resp8}\n${resp9}\n${resp10}\n** Informações para o Backup **\n\n${resp11}\n${resp13}\n${resp14}\n${resp15}\n${resp16}`;
+        textToCopy = `\n**Etapa Consultoria**\n\n${resp0}\n${resp2}\n${resp102}\n${resp103}\n${resp104}\n${resp6}\n${resp55}\n${resp7}\n${resp8}\n${resp9}\n${resp10}\n** Informações para o Backup **\n\n${resp11}\n${resp13}\n${resp14}\n${resp15}\n${resp16}`;
       } else {
-        textToCopy = `\n**Etapa Consultoria**\n\n${resp0}\n${resp2}\n${resp6}\n${resp55}\n${resp7}\n${resp8}\n${resp9}\n${resp10}\n${resp11}\n${resp13}`;
+        textToCopy = `\n**Etapa Consultoria**\n\n${resp0}\n${resp2}\n${resp102}\n${resp103}\n${resp104}\n${resp6}\n${resp55}\n${resp7}\n${resp8}\n${resp9}\n${resp10}\n${resp11}\n${resp13}`;
       }
     }
   }
@@ -487,6 +519,117 @@ function copResp3() {
   textarea.remove();
 }
 
+// Alinhamento de expectativas
+
+function textoExpec() {
+  let Alresp1 = document.getElementById("docConfig").value;
+  document.getElementById(
+    "Aresp1"
+  ).innerHTML = `- Todos os documentos foram configurados (Todos os departamentos): ${Alresp1}`;
+
+  let Alresp2 = document.getElementById("depTreinad").value;
+  document.getElementById(
+    "Aresp2"
+  ).innerHTML = `- Todos os departamentos foram treinados: ${Alresp2}`;
+
+  let Alresp3 = document.getElementById("instContinuo").value;
+  document.getElementById(
+    "Aresp3"
+  ).innerHTML = `- E-continuo foi instalado em todas as máquinas: ${Alresp3}`;
+
+  let Alresp4 = document.getElementById("equipeCadastrada").value;
+  document.getElementById(
+    "Aresp4"
+  ).innerHTML = `- E-mail e departamentos cadastrados nos contatos da empresa: ${Alresp4}`;
+
+  let Alresp5 = document.getElementById("andImplant").value;
+  document.getElementById(
+    "Aresp5"
+  ).innerHTML = `- Algo está impedindo o bom andamento da implantação? ${Alresp5}`;
+
+  let Alresp6 = document.getElementById("dataImplant").value;
+  document.getElementById("Aresp6").innerHTML = `- Data prevista de uso: ${Alresp6}`;
+
+  let Alresp7 = document.getElementById("dataConsult").value;
+  document.getElementById("Aresp7").innerHTML = `- Data prevista da próxima consultoria: ${Alresp7}`;
+
+  let Alresp8 = document.getElementById("regUso").value;
+  document.getElementById("Aresp8").innerHTML = `- Uso: ${Alresp8} %`;
+
+  let Alresp9 = document.getElementById("acesso").value;
+  document.getElementById("Aresp9").innerHTML = `- Acesso: ${Alresp9} %`;
+
+  let Alresp10 = document.getElementById("entregas").value;
+  document.getElementById("Aresp10").innerHTML = `- Entregas: ${Alresp10} %`;
+
+  let Alresp11 = document.getElementById("robo").value;
+  document.getElementById("Aresp11").innerHTML = `- Robô: ${Alresp11} %`;
+
+  /* let Alresp12 = document.getElementById("gestao").value;
+  document.getElementById("Aresp12").innerHTML = `- Gestão: ${Alresp12}`;
+
+  let Alresp13 = document.getElementById("app").value;
+  document.getElementById("Aresp13").innerHTML = `- APP: ${Alresp13}`;
+
+  let Alresp14 = document.getElementById("apla").value;
+  document.getElementById("Aresp14").innerHTML = `- APLA: ${Alresp14}`;
+
+  let Alresp15 = document.getElementById("ticketFinal").value;
+  document.getElementById(
+    "Aresp15"
+  ).innerHTML = `- Número do Ticket de Finalização dos treinamentos: ${Alresp15}`;
+  let Alresp19 = document.getElementById("appleTicket").value;
+  document.getElementById(
+    "Aresp19"
+  ).innerHTML = `- O cliente irá fazer o aplicativo da Apple ? (Se sim, já criou a conta?) ${Alresp19}`;
+
+  let Alresp16 = document.getElementById("dispensaTicket").value;
+  document.getElementById(
+    "Aresp16"
+  ).innerHTML = `- Houve dispensa de treinamento ? ${Alresp16}`;
+
+  let Alresp17 = document.getElementById("relatorioMigração").value;
+  document.getElementById(
+    "Aresp17"
+  ).innerHTML = `- Resumo do treinamento: ${Alresp17}`; -*/
+
+  let Alresp18 = document.getElementById("obscervacaoExpec").value;
+  document.getElementById(
+    "Aresp18"
+  ).innerHTML = `- Observação sobre a consultória ${Alresp18}`;
+}
+
+function copResp4() {
+  let resp0 = document.getElementById("Aresp1").textContent;
+  let resp1 = document.getElementById("Aresp2").textContent;
+  let resp2 = document.getElementById("Aresp3").textContent;
+  let resp3 = document.getElementById("Aresp4").textContent;
+  let resp4 = document.getElementById("Aresp5").textContent;
+  let resp5 = document.getElementById("Aresp6").textContent;
+  let resp6 = document.getElementById("Aresp7").textContent;
+  let resp7 = document.getElementById("Aresp9").textContent;
+  let resp9 = document.getElementById("Aresp10").textContent;
+  let resp10 = document.getElementById("Aresp11").textContent;
+  let resp11 = document.getElementById("Aresp12").textContent;
+  let resp12 = document.getElementById("Aresp13").textContent;
+  let resp13 = document.getElementById("Aresp14").textContent;
+  let resp14 = document.getElementById("Aresp15").textContent;
+  let resp15 = document.getElementById("Aresp16").textContent;
+  let resp18 = document.getElementById("Aresp17").textContent;
+  let resp19 = document.getElementById("Aresp18").textContent;
+  let resp20 = document.getElementById("Aresp19").textContent;
+  const textToCopy = `** Informações para Migração**\n\n${resp0}\n${resp1}\n${resp2}\n${resp3}\n${resp4}\n${resp5}\n${resp6}\n${resp7}\n${resp8}\n${resp9}\n${resp10}\n${resp11}\n${resp12}\n${resp13}\n${resp14}\n${resp15}\n${resp20}\n\n${resp18}\n\n${resp19}`;
+  const textarea = document.createElement("textarea");
+  textarea.value = textToCopy;
+  document.body.appendChild(textarea);
+  textarea.select();
+  document.execCommand("copy");
+  textarea.remove();
+}
+
+// Fim do Alinhamento de expectativas
+
+
 function acompTexto() {
   let Aresp1 = document.getElementById("contato").value;
   document.getElementById("Aresp1").innerHTML = `- Contato com: ${Aresp1}`;
@@ -605,11 +748,17 @@ function deleteRespInicio() {
   document.getElementById("valor").value = "";
   document.getElementById("TicketApp").value = "";
   document.getElementById("ContaApple").value = "";
+  document.getElementById("RecVenda").value = "";
+  document.getElementById("ClienteParticipativo").value = "";
+  document.getElementById("ClienteCriticou").value = "";
   document.getElementById("obs").value = "";
 }
 
 function deleteRespGeral() {
   document.getElementById("etp-uso").value = "";
+  document.getElementById("etp-acesso").value = "";
+  document.getElementById("etp-entregas").value = "";
+  document.getElementById("etp-econtínuo").value = "";
   document.getElementById("parcicipantes").value = "";
   document.getElementById("falta").value = "";
   document.getElementById("geralObs").value = "";
@@ -636,6 +785,28 @@ function deleteRespMigra() {
   document.getElementById("obscervacaoMigração").value = "";
   document.getElementById("relatorioMigração").value = "";
   document.getElementById("appleTicket").value = "";
+}
+
+function deleteAliExpec() {
+  document.getElementById("docConfig").value = "";
+  document.getElementById("depTreinad").value = "";
+  document.getElementById("instContinuo").value = "";
+  document.getElementById("equipeCadastrada").value = "";
+  document.getElementById("andImplant").value = "";
+  document.getElementById("dataImplant").value = "";
+  document.getElementById("dataConsult").value = "";
+  document.getElementById("regUso").value = "";
+  document.getElementById("acesso").value = "";
+  document.getElementById("entregas").value = "";
+  document.getElementById("robo").value = "";
+  //document.getElementById("gestao").value = "";
+  //document.getElementById("app").value = "";
+  //document.getElementById("apla").value = "";
+  //document.getElementById("ticketFinal").value = "";
+  //document.getElementById("dispensaTicket").value = "";
+  document.getElementById("obscervacaoExpec").value = "";
+  //document.getElementById("relatorioMigração").value = "";
+  //document.getElementById("appleTicket").value = "";
 }
 
 function deleteRespAcomp() {

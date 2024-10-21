@@ -207,8 +207,8 @@
 
           <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile">
             <li class="dropdown-header">
-              <h6>Patrick da Costa Cruz</h6>
-              <span>Consultor</span>
+              <h6>Karine Costa</h6>
+              <span>Analista de Dados</span>
             </li>
             <li>
               <hr class="dropdown-divider">
@@ -287,8 +287,8 @@
             </a>
           </li>
           <li>
-            <a href="migração.html">
-              <i class="bi bi-circle"></i><span>Migração</span>
+            <a href="alinhamento-extectativas.html">
+              <i class="bi bi-circle"></i><span>Alinhamento de expectativas</span>
             </a>
           </li>
           <li>
@@ -318,11 +318,11 @@
       <li class="nav-item">
         <a class="nav-link collapsed" href="https://app.acessorias.com/sysmain.php?m=145" target="_blank">
           <i class="bi bi-envelope"></i>
-          <span>Flying 3.0 Acessórias</span>
+          <span>Flying Acessórias</span>
         </a>
       </li>
 
-      <li class="nav-item">
+     <!-- <li class="nav-item">
         <a class="nav-link collapsed" href="WhatsApp.html">
           <i class="bx bxl-whatsapp"></i>
           <span>Chamar no WhatsApp</span>
@@ -341,7 +341,7 @@
           <i class="bi bi-briefcase-fill"></i>
           <span>Manual acessórias</span>
         </a>
-      </li>
+      </li> -->
     </ul><!-- End Blank Page Nav -->
   </aside><!-- End Sidebar-->
 
@@ -382,7 +382,7 @@
                       <div class="form-check form-check-inline">
                         <input class="form-check-input" type="checkbox" name="etapa" value="Lista de Tarefas"
                           id="flexCheckDefault2" oninput="infoGeral()" />
-                        <label class="form-check-label" for="flexCheckDefault2">Lista de Tarefas</label>
+                        <label class="form-check-label" for="flexCheckDefault2">Lista de Entregas</label>
                       </div>
 
                       <div class="form-check form-check-inline">
@@ -411,7 +411,7 @@
                         <label class="form-check-label" for="flexCheckDefault7">APP</label>
                       </div>
 
-                      <div class="form-check form-check-inline">
+                      <!-- <div class="form-check form-check-inline">
                         <input class="form-check-input" type="checkbox" name="etapa" value="Acompanhamento"
                           id="flexCheckDefault8" oninput="infoGeral()" />
                         <label class="form-check-label" for="flexCheckDefault8">Acompanhamento</label>
@@ -421,26 +421,51 @@
                         <input class="form-check-input" type="checkbox" name="etapa" value="Retomada"
                           id="flexCheckDefault9" oninput="infoGeral()" />
                         <label class="form-check-label" for="flexCheckDefault9">Retomada</label>
-                      </div>
+                      </div> -->
 
                       <div class="form-check form-check-inline">
                         <input class="form-check-input" type="checkbox" name="etapa" value="APLA"
                           id="flexCheckDefault10" oninput="infoGeral()" />
                         <label class="form-check-label" for="flexCheckDefault9">APLA</label>
                       </div>
+
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" name="etapa" value="Komunic"
+                          id="flexCheckDefault10" oninput="infoGeral()" />
+                        <label class="form-check-label" for="flexCheckDefault9">Komunic</label>
+                      </div>
+
                     </div>
 
                     <div class="form-floating mb-3">
                       <input class="form-control" value="0" placeholder="Leave a comment here" type="number"
                         id="etp-uso" oninput="infoGeral()" />
-                      <label for="floatingTextarea2">Uso:</label>
+                      <label for="floatingTextarea2">Uso (Geral):</label>
+                    </div>
+
+                    <div class="form-floating mb-3">
+                      <input class="form-control" value="0" placeholder="Leave a comment here" type="number"
+                        id="etp-acesso" oninput="infoGeral()" />
+                      <label for="floatingTextarea2">% de acesso:</label>
+                    </div>
+
+                    <div class="form-floating mb-3">
+                      <input class="form-control" value="0" placeholder="Leave a comment here" type="number"
+                        id="etp-entregas" oninput="infoGeral()" />
+                      <label for="floatingTextarea2">% lista de entregas:</label>
+                    </div>
+
+                    <div class="form-floating mb-3">
+                      <input class="form-control" value="0" placeholder="Leave a comment here" type="number"
+                        id="etp-econtínuo" oninput="infoGeral()" />
+                      <label for="floatingTextarea2">% e-contínuo:</label>
                     </div>
 
                     <div id="naoFaltou2 mb-3">
                       <div class="form-floating">
                         <input class="form-control" placeholder="Leave a comment here" type="text" id="parcicipantes"
                           oninput="infoGeral()" />
-                        <label for="floatingTextarea2">Quem participou da consultoria/departamento:</label>
+                        <label for="floatingTextarea2">Quem participou da consultoria:</label>
                       </div>
                     </div>
 
@@ -465,17 +490,10 @@
                       </div>
                       <div class="form-check form-check-inline">
                         <input class="form-check-input" type="radio" name="horário" id="inlineRadio3" value=+15 minutos
-                          atrasados" oninput="infoGeral()" />
+                          atrasados oninput="infoGeral()" />
                         <label class="form-check-label" for="inlineRadio3">+15 min atrasados</label>
                       </div>
                     </div>
-
-                    <div class="mb-3">
-                      <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="horário" id="inlineRadio1"
-                          value="+20 minutos atrasados" oninput="infoGeral()" />
-                        <label class="form-check-label" for="inlineRadio1">+20 min atrasados</label>
-                      </div>
                       <div class="form-check form-check-inline">
                         <input class="form-check-input" type="radio" name="horário" id="inlineRadio2" value="Faltou"
                           oninput="faltou()" />
@@ -528,7 +546,7 @@
                       </div>
                     </div>
 
-                    <div id="naoFaltou">
+                    <!-- <div id="naoFaltou">
                       <div class="row mb-3">
                         <h5>Realizaram as atividades anteriores?</h5>
                       </div>
@@ -581,7 +599,7 @@
                         </div>
                       </div>
 
-                      <!-- <div id="duvida" style="display: none">
+                       <div id="duvida" style="display: none">
                           <div class="row mb-3">
                             <h5>Em qual etapa tiveram dúvidas/dificuldades?</h5>
                           </div>
@@ -646,6 +664,7 @@
                         </div> -->
 
                       <div class="row mb-3">
+                        <h5> </h5>
                         <h5>Participativos?</h5>
                       </div>
 
@@ -675,7 +694,7 @@
                         </div>
                       </div>
 
-                      <div class="row mb-3">
+                      <!--<div class="row mb-3">
                         <h5>Algum problema?</h5>
                       </div>
 
@@ -752,17 +771,17 @@
                             oninput="infoGeral()" />
                           <label class="form-check-label" for="inlineRadio2">10</label>
                         </div>
-                      </div>
+                      </div>-->
 
                       <div class="form-floating mb-3">
                         <textarea class="form-control" placeholder="Leave a comment here" id="geralObs"
                           style="height: 250px" oninput="infoGeral()"></textarea>
-                        <label for="floatingTextarea2">Informações Adicionais:</label>
+                        <label for="floatingTextarea2">Informações Adicionais (algum problema durante a consultoria? alguma insatisfação do cliente? alguma pendência não concluída?):</label>
                       </div>
 
-                      <!-- <div class="row mb-3">
+                        <div class="row mb-3">
                           <h5>Backup?</h5>
-                        </div> -->
+                        </div> 
 
                       <div class="mb-4">
                         <div class="form-check form-check-inline">
@@ -834,6 +853,9 @@
                             <p id="geralResp0"></p>
                             <p id="geralResp1"></p>
                             <p id="geralResp2"></p>
+                            <p id="geralResp102"></p>
+                            <p id="geralResp103"></p>
+                            <p id="geralResp104"></p>
                             <p id="geralResp6"></p>
                             <p id="geralResp55"></p>
                             <p id="geralResp7"></p>
