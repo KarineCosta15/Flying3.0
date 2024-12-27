@@ -235,6 +235,64 @@
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
 
+  <!-- novo script Daniel-->
+  <script>
+    class LangflowClient {
+        constructor(baseURL, applicationToken) {
+            this.baseURL = baseURL;
+            this.applicationToken = applicationToken;
+        }
+        async post(endpoint, body, headers = {"Content-Type": "application/json"}) {
+            headers["Authorization"] = `Bearer ${this.applicationToken}`;
+            headers["Content-Type"] = "application/json";
+            const url = `${this.baseURL}${endpoint}`;
+            try {
+                const response = await fetch(url, {
+                    method: 'POST',
+                    headers: headers,
+                    body: JSON.stringify(body)
+                });
+
+                const responseMessage = await response.json();
+                if (!response.ok) {
+                    throw new Error(`${response.status} ${response.statusText} - ${JSON.stringify(responseMessage)}`);
+                }
+                return responseMessage;
+            } catch (error) {
+                console.error('Request Error:', error.message);
+                throw error;
+            }
+        }
+
+        async initiateSession(flowId, langflowId, inputValue, inputType = 'chat', outputType = 'chat', stream = false, tweaks = {}) {
+            const endpoint = `/lf/${langflowId}/api/v1/run/${flowId}?stream=${stream}`;
+            return this.post(endpoint, { input_value: inputValue, input_type: inputType, output_type: outputType, tweaks: tweaks });
+        }
+    }
+
+    const langflowClient = new LangflowClient(
+        "https://api.langflow.astra.datastax.com",
+        "AstraCS:hyHlmFoRJcoZiotEuAcSjBOJ:0d1ccd7420bd4fcf2fc7ff9ce7ca215887963e9c09e01cbb12d86924221cce33"
+    );
+
+    async function runExampleFlow() {
+        const flowId = "7a2e5c6b-defe-4736-80cf-e27882aa7baf";
+        const langflowId = "72ef65eb-53db-453b-8a4c-78d93d39863d";
+        const inputValue = "Exemplo de entrada no chat";
+
+        try {
+            const response = await langflowClient.initiateSession(flowId, langflowId, inputValue);
+            console.log("Response:", response);
+        } catch (error) {
+            console.error("Erro ao executar o fluxo:", error.message);
+        }
+    }
+
+    // Executa o exemplo ao carregar a página
+    runExampleFlow();
+  </script>
+</body>
+
 </body>
 
 </html>
